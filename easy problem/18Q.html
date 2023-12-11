@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+
+function reverse(a){
+    var temp="";
+    
+    for(i=0;i<=a.length-1;i++){
+       
+        if(a[i]==a[i].toUpperCase()){
+           temp=temp+a[i].toLowerCase()
+        }
+        else{
+            temp=temp+a[i].toUpperCase()
+        }
+    }
+    console.log(temp)
+}
+reverse("Hello Saiganesh")
+   </script> 
+</body>
+</html>

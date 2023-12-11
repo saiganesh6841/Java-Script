@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    
+    <script>
+        let get=document.getElementsByTagName("li")
+
+        // for(k=0;k<get.length;k++){
+        //     if(k%2==0){
+        //         get.style.color="red"
+        //     }
+        // }
+
+    
+    let a=["chaityana","hello","kumar"]
+
+    for(i=0;i<a.length;i++){
+        var c=""
+        var d=""
+        for(j=0;j<a[i].length;j++){
+            if(j%2==0){
+               c=c+a[i][j]
+               
+               
+            }
+            else{
+                d=d+a[i][j]
+
+            }
+        }
+        console.log(c)
+        console.log(d)
+        var index=i*2
+        get[index].innerHTML=c
+        get[index+1].innerHTML=d
+        get[index].style.color="red"
+        get[index+1].style.color="green"
+    
+
+    }
+    
+
+
+
+    </script>
+</body>
+</html>

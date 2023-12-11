@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>hello</h2>
+<div class="hell">sai ganesh</div>
+<div class="hell">sai ganesh</div>
+<!-- <div class="hell">person</div> -->
+<li>hello</li>
+<li>hello</li>
+<li>hello</li>
+<li>hello</li>
+<li>hello</li>
+<li>hello</li>
+<li>hello</li>
+
+
+
+
+
+    <script>
+          
+          let get=document.getElementsByTagName("li")
+        //  console.log(get)
+        var b=[]
+         for(i=0;i<get.length;i++){
+            var c=""
+            for(j=0;j<get[i].length;j++){
+                  if(j%2==0){
+                    c=c+get[i][j]
+                  }
+            }
+            b.push(c)
+         }
+         console.log(b)
+
+           
+        //   let old=document.getElementsByTagName("li")
+        //  console.log(old)
+        //  for(i=0;i<old.length;i++){
+        //     if(i==1 || ==1)
+        //  }
+         
+
+        // let hlo=document.querySelectorAll(".hell")
+        // console.log(hlo[0])
+        // hlo[0].style.color="red"
+        // get.style.color="green"
+    </script>
+</body>
+</html>

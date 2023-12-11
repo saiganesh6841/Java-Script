@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger;
+        //  Program to find a missing number
+
+// 			Input:  n=5(length of array), arr= [5,3,1,4]
+// 			Output: 2 is missing
+function sai(b){
+    a=b.sort()
+    for(i=0;i<a.length-1;i++){
+        if(a[i+1]!=a[i]+1){
+            console.log(`${a[i]+1} is missing`)
+        }
+    }
+    
+}
+sai([4,2,1,5])
+    </script>
+</body>
+</html>

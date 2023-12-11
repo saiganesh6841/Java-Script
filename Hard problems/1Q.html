@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a function that converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized.
+
+// Examples :
+
+// toCamelCase("A-B-C") ➞ "ABC"
+
+// toCamelCase("the-stealth-warrior") ➞ "theStealthWarrior"
+
+// toCamelCase("The_Stealth_Warrior") ➞ "TheStealthWarrior"
+
+
+function sai(a){
+    let b=""
+for(i=0;i<a.length;i++){
+    if(a[i]=="-"){
+        
+       b=b+a[i+1].toUpperCase()
+       
+       i++
+    }
+    else{
+       b=b+a[i] 
+    }
+}
+console.log(b)
+}
+sai("A-B-C")
+sai("the-stealth-warrior")
+//"_"
+sai("The_Stealth_Warrior")
+    </script>
+    
+</body>
+</html>

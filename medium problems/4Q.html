@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4]} and returns an array of objects like { name: "John", avgNote: 4 }. If a student has no notes (an empty array) then let's assume avgNote: 0.
+// 	Example :
+
+// [
+//   { name: "John", notes: [3, 5, 4]}
+// ] ➞ [
+//   { name: "John", avgNote: 4 }
+// ]
+
+var a={ name: "John", notes: [3, 5, 4]}
+var sum=0;
+var div=a["notes"].length
+for(i=0;i<div;i++){
+    sum=sum+a["notes"][i]
+}
+console.log(sum/div)
+
+delete a["notes"]
+a["avg notes"]=sum/div
+
+console.log(a)
+    </script>
+    
+</body>
+</html>

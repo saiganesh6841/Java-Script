@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img src="" alt="" width="200" height="200"> -->
+    <!-- <img src="" alt="" width="200" height="200">
+    <img src="" alt="" width="200" height="200">
+    <img src="" alt="" width="200" height="200">
+    <img src="" alt="" width="200" height="200"> -->
+
+    <script>
+        let imget=document.getElementsByTagName("img")
+        // imget[0].setAttribute("src","code data types.png")
+        // imget[0].setAttribute("src","https://tse2.mm.bing.net/th?id=OIP.c17XAqg6srb_lo1ElbyJSgHaEK&pid=Api&P=0&h=220")
+
+        // imget[0].setAttribute("src","code data types.png")
+        
+    let arr=["prabhas pic.jpg","prabhas pic.jpg","prabhas pic.jpg","prabhas pic.jpg"]
+        for(i=0;i<arr.length;i++){
+            let a=document.createElement("img")
+            a.setAttribute("width",200)
+            console.log(arr[0])
+            document.body.append(a)
+            a.setAttribute("src",arr[i])
+        }
+    </script>
+</body>
+</html>

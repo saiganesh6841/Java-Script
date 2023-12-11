@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //*Count Occurrences**: Write a function that counts the number of times a specific element appears in an array.
+
+var a=[2,3,3,5,2,3,3,4];
+var d=""
+for(i=0;i<a.length;){
+    var count=0;
+    var b=[]
+    var c=""
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count=count+1
+         c=a[i]+"-"+count
+        }
+        else{
+            b.push(a[j])  
+        }
+     
+    }
+    d=d+c+","
+    a=b
+    
+}
+console.log(d)
+    </script>
+</body>
+</html>

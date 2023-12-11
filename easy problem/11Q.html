@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger;
+        function sort(a){
+    let c;
+for(i=0;i<a.length;i++){
+    for(j=0;j<a.length;j++){
+        if(a[i].length<a[j].length){
+      c=a[i];
+      a[i]=a[j];
+      a[j]=c
+        }
+    }
+   
+}
+console.log(a)
+}
+sort(["a", "ccc", "dddd", "bb","aaa"])
+        
+//         function sort(a){
+//     let c;
+// for(i=0;i<a.length;i++){
+//     for(j=i+1;j<a.length;j++){
+//         if(a[i].length>a[j].length){
+//       c=a[i];
+//       a[i]=a[j];
+//       a[j]=c
+//         }
+//     }
+   
+// }
+// console.log(a)
+// }
+// sort(["a", "ccc", "dddd", "bb","aaa"])
+    </script>
+</body>
+</html>

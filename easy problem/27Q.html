@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //lcm and gcd
+        function sai(a,b){
+    var c=[]
+for(i=0;i<=b;i++){
+        if(a%i==0 && b%i==0){
+            c.push(i)
+        } 
+}
+var z=0
+for(j=0;j<c.length;j++){
+    if(z<c[j]){
+        z=c[j]
+    }
+}
+console.log(`The GCD of ${a} and ${b} is: ${z}`)
+let x=a*b/z
+console.log(`The LCM of ${a} and ${b} is: ${x}`)
+}
+sai(15,50)
+
+        //prime factors
+        function sai(a){
+    const b=[]
+    let div=2
+    while(a>=2){
+        if(a%div==0){
+            b.push(div)
+            a=a/div
+        }
+        else{
+            div=div+1
+        }
+    }
+    console.log(b)
+    
+}
+sai(18)
+    </script>
+</body>
+</html>

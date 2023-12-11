@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //**Filter Even Numbers**: Write a function that filters out all even numbers from an array and returns a new array with only the even numbers
+function even(a){
+    newarr=[]
+    for(i=0;i<a.length;i++){
+        temp=""
+        for(j=0;j<a[i].length;j++){
+            if(j%2==0){
+                temp=temp+a[i][j]
+            }
+        }
+          newarr.push(temp)  
+    }
+console.log(newarr)
+  
+}
+even(["ganesh","hello","saiganesh"])
+
+    </script>
+</body>
+</html>

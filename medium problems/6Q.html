@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Count each occurrence of number(can not use predefined function).
+
+// 			Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+// 			Output: 1 present 2 times.
+// 				   2 present 1 times.
+// 				   3 present 2 times.
+// 				   5 present 1 times …….  Etc
+
+
+
+
+var a=[1,6,3,1,5,9,7,2,1,9,3,7,8,9,10];
+
+for(i=0;i<a.length;){
+    var count=0;
+    var b=[]
+    var c=""
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count=count+1
+        
+        }
+        else{
+            b.push(a[j])  
+        }
+    } 
+    console.log(`${a[i]} presents ${count} times`)
+    a=b 
+}
+    </script>
+</body>
+</html>

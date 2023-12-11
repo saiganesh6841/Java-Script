@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function that takes two strings as arguments and returns the number of times the first string (the single character) is found in the second string.
+//Example:
+
+//charCount("c", "Chamber of secrets") ➞ 1
+
+function repeat(charcter,str){
+    count=0;
+    for(i=0;i<=str.length-1;i++){
+        if(charcter == str[i]){
+            count=count+1
+        }
+    }
+    return count;
+}
+console.log(repeat("s","yours oridinary person sai"))
+    </script>
+</body>
+</html>

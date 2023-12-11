@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write Program to remove duplicate elements in an array and sort it in descending order(can not use predefined function).
+
+// 			Input: [5,3,5,2,1,1,7,3,5,6]
+// 			Output: [7,6,5,32,1]
+
+function removeDuplicate(a){
+    var temp=[]
+    let c;
+    for(i=0;i<a.length;i++){
+        for(j=i+1;j<a.length;j++){
+            if(a[i]<a[j]){
+                c=a[i]
+                a[i]=a[j]
+                a[j]=c
+            }
+        }
+    }
+    console.log(a)
+   
+    for(k=0;k<a.length;k++){
+        if(a[k]!=a[k+1]){
+            temp.push(a[k])
+        }
+    }
+  console.log(temp)
+}
+removeDuplicate([5,3,5,2,1,1,7,3,5,6])
+    </script>
+</body>
+</html>

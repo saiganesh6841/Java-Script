@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // . C Program to arrange numbers in ascending order
+// 			Input: [2,3,1,5,4]
+// 			Output: [1,2,3,4,5]
+
+function sai(a){
+    var c;
+    for(i=0;i<a.length;i++){
+        for(j=0;j<a.length;j++){
+            if(a[i]<a[j]){
+                c=a[i]
+            a[i]=a[j]
+            a[j]=c
+            }
+        }
+         
+    }
+    console.log(a)
+   
+}
+sai([2,3,1,5,4])
+    </script>
+</body>
+</html>

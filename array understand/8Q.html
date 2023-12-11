@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Find Common Elements**: Write a function that finds and returns the common elements between two arrays.
+
+function sai(a,b){
+    var c=[]
+for(i=0;i<a.length;i++){
+    for(j=0;j<b.length;j++){
+        if(a[i]==b[j]){
+          c.push(a[i])
+        }
+    }
+}
+console.log(c)
+}
+sai([1,2,3,4,5],[3,4,2,7,8,5,8])
+    </script>
+</body>
+</html>

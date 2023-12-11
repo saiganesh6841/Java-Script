@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create a function that takes an array of integers as an argument and returns a unique number from that array. All numbers except unique ones have the same number of occurrences in the array.
+
+function sai(a){
+    var unique=[]
+     for(i=0;i<a.length;){
+         var count=0;
+         var c=""
+         var d=[]
+         for(j=0;j<a.length;j++){
+             if(a[i]==a[j]){
+                 count=count+1;
+                 c=a[i]+"-"+count
+             }
+             else{
+                 d.push(a[j])
+             }
+         }
+         if(count==1){
+             unique.push(a[i])
+         }
+         a=d
+         
+     }
+     console.log(unique)
+   
+}
+sai([2,2,3,4,4,5,5,6,2,7])
+
+//samle 2
+var a=[2,2,2,3,4,4,4,5,3]
+for(i=0;i<a.length;i++){
+    var count=0;
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count=count+1
+        }
+    }
+    if(count==1){
+        console.log(a[i])
+    }
+}
+    </script>
+</body>
+</html>
