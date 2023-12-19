@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // var a=10;
+// // var b=20
+
+// // a=a+b
+// // b=a-b
+// // a=a-b
+// // console.log(a)
+// // console.log(b)
+
+// Most Commonly Used two Character in String(can not use predefined function)
+
+// 				Input: ‘Hii i am ram’
+// Output; i, a 
+debugger;
+var a="hii i am ram"
+
+var c=0
+for(i=0;i<a.length;i++){
+    console.log(a)
+    var b=""
+    var count=0
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count=count+1
+            
+        }
+        else{
+            b=b+a[j]
+        }
+          
+    }
+    console.log(count+a[i])
+  
+    a=b   
+}
+
+    </script>
+</body>
+</html>

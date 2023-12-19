@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 500px;
+            height: 500px;
+            margin-left: 20%;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <button onclick="hello()">Click here for img</button> -->
+    <img src="https://th.bing.com/th/id/OIP.kljjd8R0QuxZpqpXsLnq8QHaFa?w=242&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+    <script>
+
+let btn=document.createElement("button")
+document.body.appendChild(btn)
+btn.innerText="Click here for change img"
+btn.style.fontSize="50px"
+btn.style.display="block"
+btn.style.color="red"
+
+let mg1=document.getElementsByTagName("img")
+
+btn.addEventListener("click",()=>{
+    mg1[0].setAttribute("src","https://th.bing.com/th/id/R.fcdde97a1fd1877abee1294d3e5f911e?rik=iQj%2bAZgvl%2bsG2A&riu=http%3a%2f%2f4.bp.blogspot.com%2f-6MLITw3yv_0%2fT0zHmBWYV1I%2fAAAAAAAAOcA%2fLy8MmElR5bM%2fs1600%2fPrabhas%2b14.jpg&ehk=gWroEyiBFJW%2fl1i4wd2EoaXzGeReGo9E1bHu1ry0B%2fc%3d&risl=&pid=ImgRaw&r=0")
+    
+
+
+})
+
+btn.addEventListener("onclick",()=>{
+        mg1[0].setAttribute("src","https://th.bing.com/th/id/OIP.kljjd8R0QuxZpqpXsLnq8QHaFa?w=242&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7")  
+    })
+
+
+
+// btn[0].addEventListener("click",()=>{
+//     mg1[0].setAttribute("src","https://th.bing.com/th/id/OIP.nD5TyKeRyYQN2FaPQ1atGAHaKs?w=126&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7")
+// })
+
+
+
+// () =>{
+//         mg1[0].setAttribute("src","https://th.bing.com/th/id/OIP.kljjd8R0QuxZpqpXsLnq8QHaFa?w=242&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7")  
+//     }
+
+
+
+
+
+
+
+// function hello {
+//     let mg=document.createElement("img")
+//     mg.setAttribute("src","https://th.bing.com/th/id/OIP.ToqmJ6PNAn2b_vvY-KJKNAHaE8?w=274&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7")
+//     mg1.appendChild(mg)
+// }
+
+
+    </script>
+</body>
+</html>
