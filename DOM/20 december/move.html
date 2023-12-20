@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table,tr,td{
+        border: 3px solid black;
+        border-collapse: collapse;
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+       }
+    </style>
+</head>
+<body>
+  
+    <script>
+     
+
+   var sm=JSON.parse(localStorage.getItem("see"))
+   console.log(sm)
+
+   let tabl=document.createElement("table")
+   document.body.appendChild(tabl)
+
+   let tr1=document.createElement("tr")
+   tabl.appendChild(tr1)
+
+   let td1=document.createElement("td")
+   td1.innerText=sm.id
+   tr1.appendChild(td1)
+
+   let td2=document.createElement("td")
+   td2.innerText=sm.title
+   tr1.appendChild(td2)
+
+   let td4=document.createElement("td")
+   td4.innerText=sm.description
+   tr1.appendChild(td4)
+
+   let td3=document.createElement("td")
+   let mg=document.createElement("img")
+   mg.setAttribute("src",sm.image)
+   mg.style.width="200px"
+   td3.appendChild(mg)
+   tr1.appendChild(td3)
+
+//    let tab=document.createElement("li")
+//    document.body.appendChild(tab)
+   
+//    let x=document.createElement("li")
+//             x.innerText=sm.id
+
+//             let y=document.createElement("li")
+//             y.innerText=sm.title
+
+            
+
+//             let z=document.createElement("li")
+//             let mg=document.createElement("img")
+//             mg.setAttribute("src",sm.image)
+//             mg.style.width="200px"
+//             z.appendChild(mg)
+
+//             tab.appendChild(x)
+//             tab.appendChild(y)
+//             tab.appendChild(y)
+
+
+
+           
+
+//    let mg=document.getElementsByTagName("img")
+//    mg[0].setAttribute("src",sm.image)
+//    mg[0].style.width="200px"
+
+
+// let api=[]
+// // var sm=JSON.parse(localStorage.getItem("see"))
+// api.push(sm)
+
+// api.forEach((val)=>{
+//     let tit=document.createElement("li")
+//     tit.innerText=val.title
+//     document.body.appendChild(tit)
+
+//     let mg=document.createElement("li")
+//     let mg=document.getElementsByTagName("img")
+//    mg[0].setAttribute("src",.image)
+
+
+// })
+
+
+    </script>
+</body>
+</html>

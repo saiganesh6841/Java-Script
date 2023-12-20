@@ -10,16 +10,30 @@
         <!-- <img src="" alt=""> -->
         <h1>asdf</h1>
         <h1>hello</h1>
+        <button>
+            click for back
+        </button>
+        <!-- <button>for backward</button> -->
         <script>
-           let h1get=document.getElementsByTagName("h1")
-           console.log(h1get[1])
+        //    let h1get=document.getElementsByTagName("h1")
+        //    console.log(h1get[1])
 
-           let h3cre=document.createElement("h3")
-        //    document.body.append(h3cre)
-           h3cre.innerText="sai"
+        //    let h3cre=document.createElement("h3")
+        // //    document.body.append(h3cre)
+        //    h3cre.innerText="sai"
 
-           let bp=document.getElementsByTagName("body")
-           bp[0].insertBefore(h3cre,h1get[1]);
+        //    let bp=document.getElementsByTagName("body")
+        //    bp[0].insertBefore(h3cre,h1get[1]);
+
+        let get=document.getElementsByTagName("button")
+
+// get[0].addEventListener("click",()=>{
+//    window.location.assign("./19dec.html")
+// })
+
+get[0].addEventListener("click",()=>{
+    window.history.back()
+})
 
 
 

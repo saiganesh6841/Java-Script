@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 700px;
+            height: 700px;
+            background-color: lightgreen;
+            margin-left: 30%;
+            text-align: center;
+        }
+        .category{
+            font-size: 60px;
+            background-color: green;
+            color: white;
+            font-family:serif;
+        }
+        h3{
+            color:crimson;
+            font-size: 40px
+        }
+        h1{
+            color:rgb(255, 102, 0);
+        }
+        img{
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        let x=JSON.parse(localStorage.getItem("see"))
+  //creating div element for card type
+        let di=document.createElement("div")
+        di.className="box"
+        document.body.appendChild(di)
+
+//title
+       let tit=document.createElement("h1")
+       tit.innerHTML=x.title
+       di.appendChild(tit)
+
+       //image
+
+       let mg=document.createElement("img")
+       mg.setAttribute("src",x.image)
+       mg.style.width="300px"
+       mg.style.height="300px"
+       di.appendChild(mg)
+
+       //price
+       let d=document.createElement("h3")
+       d.innerText="price: "+x.price
+       di.appendChild(d)
+
+      //rating
+      let rat=document.createElement("h3")
+      rat.innerHTML="Rating: "+x.rating.rate
+      di.appendChild(rat)
+
+      //category
+      let cat=document.createElement("h2")
+      cat.className="category"
+      cat.innerHTML="Rating: "+x.category
+      di.appendChild(cat)
+    </script>
+</body>
+</html>

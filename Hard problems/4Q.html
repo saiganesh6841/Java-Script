@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Create a function which takes in an encoded string and returns an object according to the following example:
+// Examples :
+// parseCode("John000Doe000123") ➞ {
+// firstName: "John",
+// lastName: "Doe",
+// id: "123"
+// }
+let a="John000Doe000123"
+let b=a.split("0")
+console.log(b)
+let c=b.filter((val)=>{ return val!=""})
+console.log(c)
+let d={}
+ d ["firstneame"]=c[0]
+    d ["lasttneame"]=c[1]
+    d ["id"]=c[2]
+    console.log(d)
+
+    </script>
+</body>
+</html>
